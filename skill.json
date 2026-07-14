@@ -1,0 +1,29 @@
+{
+  "name": "genpark-openrouter-model-pricing-tracker-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - OpenRouter model transaction cost estimator.",
+  "author": "genpark",
+  "category": "agentic",
+  "tags": [
+    "openrouter",
+    "pricing"
+  ],
+  "inputs": {
+    "model_name": {
+      "type": "string"
+    },
+    "input_tokens": {
+      "type": "integer"
+    },
+    "output_tokens": {
+      "type": "integer"
+    }
+  },
+  "outputs": {
+    "estimated_cost_usd": {
+      "type": "number"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
